@@ -46,10 +46,6 @@ if (!function_exists('namespace_collection')) {
              */
             public static function getInstance()
             {
-                if (!isset(self::$instance)) {
-                    self::$instance = new self();
-                }
-
                 return self::$instance;
             }
 
@@ -90,11 +86,17 @@ if (!function_exists('namespace_collection')) {
              */
             protected $keys;
 
-            private function __construct()
+            public function __construct()
             {
-                $this->data = array(
-                    "Ahada\\"   => directory_path(__DIR__)
-                );
+                //echo dirname(__FILE__, 2);
+                if (!isset(self::$instance)) {
+                    self::$instance = $this;
+
+                    $this->data = array(
+                        "Ahada\\"   => directory_path(dirname(__FILE__, 2))
+                    );
+
+                }
             }
 
             /**
