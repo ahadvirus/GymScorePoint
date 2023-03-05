@@ -1,6 +1,6 @@
 <?php
 
-foreach (array('path', 'automapper') as $file) {
+foreach (array('path', 'autoloader') as $file) {
 
     require_once sprintf(
         '%s%s%s.php',
