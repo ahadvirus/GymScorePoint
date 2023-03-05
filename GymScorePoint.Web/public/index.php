@@ -1,5 +1,7 @@
 <?php
 
-echo '<pre>';
-var_dump($_SERVER);
-echo '</pre>';
+require_once '..\app\Packages\Ahada\Helpers\initializer.php';
+
+echo Ahada\Application::dispatch('');
+
+//echo Ahada\Application::dispatch()
