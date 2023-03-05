@@ -8,6 +8,9 @@
     <WebRoot>public</WebRoot>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="app\" />
+    <Folder Include="app\Handlers\" />
+    <Folder Include="app\Configs\" />
+    <Folder Include="app\Helpers\" />
+    <Folder Include="app\Routes\" />
   </ItemGroup>
 </Project>
