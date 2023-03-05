@@ -4,7 +4,11 @@ namespace Ahada\Exceptions;
 
 class RouteNotFound extends \Exception
 {
-    public function __construct(){
-        parent::__construct('');
+    /**
+     * Summary of __construct
+     * @param string $message 
+     */
+    public function __construct($message = ''){
+        parent::__construct($message);
     }
 }
