@@ -8,9 +8,22 @@
     <WebRoot>public</WebRoot>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="app\Handlers\" />
+    <Content Include="app\Packages\Ahada\Helpers\Composer\opis\closure\LICENSE" />
+    <Content Include="app\Packages\Ahada\Helpers\Composer\opis\closure\NOTICE" />
+    <Content Include="app\Packages\Ahada\Helpers\Composer\php-di\invoker\LICENSE" />
+    <Content Include="app\Packages\Ahada\Helpers\Composer\php-di\php-di\LICENSE" />
+    <Content Include="app\Packages\Ahada\Helpers\Composer\php-di\phpdoc-reader\LICENSE" />
+    <Content Include="app\Packages\Ahada\Helpers\Composer\psr\container\LICENSE" />
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="app\Configs\" />
-    <Folder Include="app\Helpers\" />
-    <Folder Include="app\Routes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app\Packages\Ahada\Helpers\Composer\opis\closure\LICENSE" />
+    <None Include="app\Packages\Ahada\Helpers\Composer\opis\closure\NOTICE" />
+    <None Include="app\Packages\Ahada\Helpers\Composer\php-di\invoker\LICENSE" />
+    <None Include="app\Packages\Ahada\Helpers\Composer\php-di\php-di\LICENSE" />
+    <None Include="app\Packages\Ahada\Helpers\Composer\php-di\phpdoc-reader\LICENSE" />
+    <None Include="app\Packages\Ahada\Helpers\Composer\psr\container\LICENSE" />
   </ItemGroup>
 </Project>
