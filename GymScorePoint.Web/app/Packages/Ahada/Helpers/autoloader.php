@@ -9,7 +9,11 @@ spl_autoload_register(function ($name) {
 
             $file = matching_path(sprintf('%s.php', str_replace($namespace, $address, $name)));
 
-            require_once $file;
+            if(is_file($file))
+            {
+                require_once $file;
+                break;
+            }
         }
     }
 });

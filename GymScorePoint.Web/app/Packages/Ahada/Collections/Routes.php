@@ -4,10 +4,19 @@ namespace Ahada\Collections;
 
 class Routes implements \Iterator
 {
+    /**
+     * @var array
+     */
     protected $data;
 
+    /**
+     * @var array
+     */
     protected $keys;
 
+    /**
+     * @var int
+     */
     protected $position;
 
     public function __construct()
@@ -19,6 +28,7 @@ class Routes implements \Iterator
     /**
      * @param string $address
      * @param string $handler
+     * @param string $name
      * @return void
      */
     public function add($address, $handler, $name = '')

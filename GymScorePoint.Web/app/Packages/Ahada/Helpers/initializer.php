@@ -1,9 +1,9 @@
 <?php
 
-foreach (array('path', 'autoloader') as $file) {
+foreach (array('path', 'autoloader', 'Composer\composer') as $file) {
 
     require_once sprintf(
-        '%s%s%s.php',
+        '%s.php',
         implode(
             DIRECTORY_SEPARATOR,
             array_filter(
@@ -15,7 +15,12 @@ foreach (array('path', 'autoloader') as $file) {
                         str_replace(
                             '/',
                             DIRECTORY_SEPARATOR,
-                            dirname(__FILE__)
+                            sprintf(
+                                '%s%s%s',
+                                dirname(__FILE__),
+                                DIRECTORY_SEPARATOR,
+                                $file
+                            )
                         )
                     )
                 ),
@@ -23,10 +28,10 @@ foreach (array('path', 'autoloader') as $file) {
                     return !empty($entry);
                 }
             )
-        ),
-        DIRECTORY_SEPARATOR,
-        $file
+        )
     );
 
     //require_once $file;
 }
+
+unset($file);
